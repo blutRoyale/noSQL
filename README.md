@@ -24,3 +24,24 @@ Uruchamiamy skrypt MongoToSqlite.sh
 Uzycie: [nazwaBazy] [nazwa kolekcji] [port]
 
 Wynik zostanie zapisany do pliku defaultExport.db.
+
+Skrypt wykorzystuje pythona by przeniesc dane z bazy do bazy.
+Przy dzialajacym Pythonie 2.7 powienien dzialac bez zarzutu.
+
+### MapReduce
+
+Skrpyt mr dla MongoDB znajduje sie w pliku mr-mongo.js.
+Program sumuje liczbe aplikacji dla danej kategorii.
+
+Przykladowe rozwiazanie:
+
+**> db[res.result].find()**
+*{ "_id" : "BUSINESS", "value" : 328 }*
+
+
+Skrypt dla CouchDB znajduje sie w pliku mr-couch.js
+
+Przykładowy wynik:
+
+*"BUSINESS"    328*
+
